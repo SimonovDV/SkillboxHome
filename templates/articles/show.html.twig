@@ -1,0 +1,10 @@
+{% extends "base.html.twig" %}
+{% block body %}
+<p>Это статья: <b>{{ article }}</b></p>
+<h3>Комментариев: {{ comments|length }}</h3>
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+{% endblock body %}
